@@ -9,8 +9,14 @@ function Jukebox(){
 	this.addSong = function(x){
 		this.songs.push(x)
 	};
+	this.playNextSong = function(){
+		//play next song in array
+	}
 }
 
-function Song(){
+function Song(name, link){
 	this.name = name;
+	this.link = 
 }
+
+document.getElementById("play"").addEventListener('click', Jukebox.play());
