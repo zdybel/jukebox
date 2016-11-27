@@ -73,8 +73,8 @@ function Jukebox(){
 		document.getElementById('audio').src = "AsLongAsYouLoveMe.mp3";
 		document.getElementById('audio').play();
 	}
-	var loadedSong = document.getElementById('loadInput').value;
 	this.loadSong = function(){
+		var loadedSong = document.getElementById('loadInput').value;
 		document.getElementById('audio').src = loadedSong;
 		document.getElementById('audio').play();
 	}
