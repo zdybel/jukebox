@@ -70,7 +70,7 @@ function Jukebox(){
 		this.songs.push(x)
 	};
 	this.playNext = function(){
-		document.getElementById('audio').src = "Audio-example.mp3";
+		document.getElementById('audio').src = "AsLongAsYouLoveMe.mp3";
 		document.getElementById('audio').play();
 	}
 	var loadedSong = document.getElementById('loadInput').value;
