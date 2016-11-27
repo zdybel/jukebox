@@ -69,8 +69,14 @@ function Jukebox(){
 	this.addSong = function(x){
 		this.songs.push(x)
 	};
-	this.playNextSong = function(){
-		//play next song in array
+	this.playNext = function(){
+		document.getElementById('audio').src = "Audio-example.mp3";
+		document.getElementById('audio').play();
+	}
+	var loadedSong = document.getElementById('loadInput').value;
+	this.loadSong = function(){
+		document.getElementById('audio').src = loadedSong;
+		document.getElementById('audio').play();
 	}
 }
 
@@ -79,6 +85,8 @@ var BrynneJukebox = new Jukebox();
 document.getElementById('play').addEventListener('click', BrynneJukebox.play);
 document.getElementById('pause').addEventListener('click', BrynneJukebox.pause);
 document.getElementById('stop').addEventListener('click', BrynneJukebox.stop);
+document.getElementById('playNext').addEventListener('click', BrynneJukebox.playNext);
+document.getElementById('loadButton').addEventListener('click', BrynneJukebox.loadSong);
 
 function Song(name, link){
 	this.name = name;
